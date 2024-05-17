@@ -39,7 +39,12 @@ body {
 
 input {
   border-radius: 5px;
-  border: 7px;
+  border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+#csenha,#psenha,#ncelular,#Email,#pnome {
+  height: 30px;
+  width: 350px;
 }

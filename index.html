@@ -13,29 +13,35 @@
     <h1 style="text-decoration: underline">BARBEARIA ALURA</h1>
     <h4 style="text-decoration: underline">Seja bem-vindo(a)</h4>
     <div id="form-info">
-      <form>
-        <label for="pnome"> * Insira seu nome de usuario</label><br>
-        <input type="text" id="pnome" name="pnome" placeholder="Paulo Silvera"> <br>
+      <form action="javascript:prossiga();">
+        <label for="pnome"> * Insira seu nome completo</label><br>
+        <input type="text" id="pnome" name="pnome" placeholder="Nome completo" required"> <br>
 
         <label for="Email"> * Insira seu nome de Email</label><br>
-        <input type="text" id="Email" name="Email" placeholder="Barbearia.Alura@gmail.com">
+        <input type="text" id="Email" name="Email" placeholder="Endereço de Email" required>
         <br>
 
         <label for="ncelular"> * Insira seu número de Telefone</label> <br>
-        <input type="number" id="ncelular" name="ncelular" placeholder="+55 41 91232-3232"> <br>
+        <input type="number" id="ncelular" name="ncelular" placeholder="Número de telefone" required"> <br>
 
         <label for="psenha"> * Insira sua senha</label> <br>
-        <input type="password" id="psenha" name="psenha" placeholder="*************"> <br>
+        <input type="password" id="psenha" name="psenha" placeholder="Senha" required"> <br>
 
         <label for="csenha"> * Confirme a sua senha</label> <br>
-        <input type="password" id="csenha" name="csenha" placeholder="*************"> <br>
+        <input type="password" id="csenha" name="csenha" placeholder="Confirme a sua senha" required> <br>
 
         <div style="font-size: 12px;">
-          <input type="checkbox" name="termos" checked> Ao enviar o formulário, você concorda com os <a> termos e
-            condições </a> da Barbearia Alura <br>
+          <input type="checkbox" name="termos" id="CheckBoxTermos"> Ao enviar o formulário, você concorda com os
+          <a href="/termos_e_condicoes.html" target="_blank">termos e condições</a> da Barbearia Alura <br>
+          <input type="checkbox" name="___SacanagemDoSite" checked> Deseja receber nossas novidades, notícias e promoções por e-mail? <br>
 
-          
-          <input type="submit" name="enviar" value="Enviar Formulário" style="margin-top: 30px; border: 2px; border-radius: 2px;">
+
+          <input type="submit" name="enviar" value="Enviar Formulário" id="submitbut" style="margin-top: 20px; cursor:pointer; display: flex">
+
+          <img src="logo.png" style="width: 50px; height: 70px; display: flex; margin-left: auto; margin-right: auto; margin-top: -60px;">
+
+          <span style=" text-align: center; position: absolute; bottom: 0; left: 50; transform: translateX(35%); color: rgb(200, 200, 200);">Copyright &#169
+            2024-2024 | Barbearia Alura</span>
 
         </div>
       </form>
