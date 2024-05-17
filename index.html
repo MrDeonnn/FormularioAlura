@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FORMULARIO BARBEARIA ALURA</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="container-form">
+    <h1 style="text-decoration: underline">BARBEARIA ALURA</h1>
+    <h4 style="text-decoration: underline">Seja bem-vindo(a)</h4>
+    <div id="form-info">
+      <form>
+        <label for="pnome"> * Insira seu nome de usuario</label><br>
+        <input type="text" id="pnome" name="pnome" placeholder="Paulo Silvera"> <br>
+
+        <label for="Email"> * Insira seu nome de Email</label><br>
+        <input type="text" id="Email" name="Email" placeholder="Barbearia.Alura@gmail.com">
+        <br>
+
+        <label for="ncelular"> * Insira seu número de Telefone</label> <br>
+        <input type="number" id="ncelular" name="ncelular" placeholder="+55 41 91232-3232"> <br>
+
+        <label for="psenha"> * Insira sua senha</label> <br>
+        <input type="password" id="psenha" name="psenha" placeholder="*************"> <br>
+
+        <label for="csenha"> * Confirme a sua senha</label> <br>
+        <input type="password" id="csenha" name="csenha" placeholder="*************"> <br>
+
+        <div style="font-size: 12px;">
+          <input type="checkbox" name="termos" checked> Ao enviar o formulário, você concorda com os <a> termos e
+            condições </a> da Barbearia Alura <br>
+
+          
+          <input type="submit" name="enviar" value="Enviar Formulário" style="margin-top: 30px; border: 2px; border-radius: 2px;">
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
