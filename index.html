@@ -4,49 +4,167 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>FORMULARIO BARBEARIA ALURA</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>CURSOS LINDAURA RIBEIRO LUCAS</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="reset.css" rel="stylesheet" />
+
+  <style>
+    h2 {
+      font-size: 30px;
+      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+      padding-right: 20px;
+      margin-top: 25px;
+      display: inline-block;
+
+      float: right;
+
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color:
+        #000;
+    }
+
+    .hover-underline-animation:after {
+      content: '';
+      position: absolute;
+      width: 87%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color:
+        #000;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    header {
+      height: 120px;
+      background-color: rgb(200, 200, 200);
+    }
+
+    img {
+      float: left;
+    }
+
+    p {
+      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+      padding-left: 10px;
+      margin-top: 5px;
+      display: inline-block;
+    }
+
+    #nasc, #entrada, #saida{
+      width: 120px;
+    }
+
+    fieldset{
+      border-width: 0;
+    }
+
+    #env{
+      margin: 10px;
+    }
+
+    h1{
+      margin-left: 10px;
+    }
+
+    form{
+      background-color: lightgray;
+      border: 2px solid darkgray;
+      border-radius: 10px;
+      margin: 20px;
+
+      width: 575px;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      
+    }
+
+    form label, form legend{
+      display: block;
+      font-size: 20px;
+      margin: 0 0 10px 10px;
+    }
+
+    .input-padrao{
+      display: block;
+      margin: 0 0 20px 10px;
+      padding: 10px 25px;
+      width: 500px;
+      background-color: white;
+    }
+  </style>
+
 </head>
 
 <body>
-  <div id="container-form">
-    <h1 style="text-decoration: underline">BARBEARIA ALURA</h1>
-    <h4 style="text-decoration: underline">Seja bem-vindo(a)</h4>
-    <div id="form-info">
-      <form action="javascript:prossiga();">
-        <label for="pnome"> * Insira seu nome completo</label><br>
-        <input type="text" id="pnome" name="pnome" placeholder="Nome completo" required"> <br>
 
-        <label for="Email"> * Insira seu nome de Email</label><br>
-        <input type="text" id="Email" name="Email" placeholder="Endereço de Email" required>
-        <br>
+  <header>
 
-        <label for="ncelular"> * Insira seu número de Telefone</label> <br>
-        <input type="number" id="ncelular" name="ncelular" placeholder="Número de telefone" required"> <br>
-
-        <label for="psenha"> * Insira sua senha</label> <br>
-        <input type="password" id="psenha" name="psenha" placeholder="Senha" required"> <br>
-
-        <label for="csenha"> * Confirme a sua senha</label> <br>
-        <input type="password" id="csenha" name="csenha" placeholder="Confirme a sua senha" required> <br>
-
-        <div style="font-size: 12px;">
-          <input type="checkbox" name="termos" id="CheckBoxTermos"> Ao enviar o formulário, você concorda com os
-          <a href="/termos_e_condicoes.html" target="_blank">termos e condições</a> da Barbearia Alura <br>
-          <input type="checkbox" name="___SacanagemDoSite" checked> Deseja receber nossas novidades, notícias e promoções por e-mail? <br>
-
-
-          <input type="submit" name="enviar" value="Enviar Formulário" id="submitbut" style="margin-top: 20px; cursor:pointer; display: flex">
-
-          <img src="logo.png" style="width: 50px; height: 70px; display: flex; margin-left: auto; margin-right: auto; margin-top: -60px;">
-
-          <span style=" text-align: center; position: absolute; bottom: 0; left: 50; transform: translateX(35%); color: rgb(200, 200, 200);">Copyright &#169
-            2024-2024 | Barbearia Alura</span>
-
-        </div>
-      </form>
+    <img src="lindauralog.png" style="height: 120px; width: 120px;"> <br>
+    <div
+      style="  font-size: 30px; font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; padding-left: 10px; margin-top: 5px; display: inline-block;">
+      LINDAURA RIBEIRO LUCAS <br>
+      <p style="font-size: 17px;"> COLÉGIO ESTADUAL </p>
     </div>
-  </div>
+
+    <h2 class="hover-underline-animation">VISITANTES</h2>
+    <h2 class="hover-underline-animation">SAÍDA</h2>
+    <h2 class="hover-underline-animation">ENTRADA</h2>
+
+
+  </header>
+  <form>
+
+    <label for="nome">Nome e Sobrenome:<p>*</p></label>
+    <input class="input-padrao" type="text" id="nome" required>
+
+    <label for="nasc">Data de Nascimento:<p>*</p></label>
+    <input class="input-padrao" type="date" id="nasc" required>
+
+    <label for="email">E-mail:</label>
+    <input class="input-padrao" type="email" id="email">
+
+    <label for="tel">Telefone:</label>
+    <input class="input-padrao" type="tel" id="tel">
+
+    <fieldset>
+
+      <legend>Com qual gênero você prefere ser identificado(a)?<p>*</p></legend>
+
+      <label for="radio-M"><input type="radio" name="genero" value="M" id="radio-M">Masculino</label>
+
+      <label for="radio-F"><input type="radio" name="genero" value="F" id="radio-F">Feminino</label>
+
+      <label for="radio-N"><input type="radio" name="genero" value="N" id="radio-N">Não Binario</label>
+
+    </fieldset>
+
+    <label for="bairro">Bairro:<p>*</p></label>
+    <input class="input-padrao" type="text" id="bairo" required>
+
+    <label for="entrada">Horario de entrada:<p>*</p></label>
+    <input class="input-padrao" type="time" id="entrada" required>
+
+    <input type="submit" value="Enviar" id="env">
+
+  </form>
+  
   <script src="script.js"></script>
 </body>
 
