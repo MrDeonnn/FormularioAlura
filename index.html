@@ -7,81 +7,28 @@
   <title>CURSOS LINDAURA RIBEIRO LUCAS</title>
   <link href="style.css" rel="stylesheet" />
   <link href="reset.css" rel="stylesheet" />
+  <link href="info.css" rel="stylesheet" />
 
   <style>
-    h2 {
-      font-size: 30px;
-      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-      padding-right: 20px;
-      margin-top: 25px;
-      display: inline-block;
-
-      float: right;
-
-      color: inherit;
-      text-decoration: none;
-    }
-
-
-    .hover-underline-animation {
-      display: inline-block;
-      position: relative;
-      color:
-        #000;
-    }
-
-    .hover-underline-animation:after {
-      content: '';
-      position: absolute;
-      width: 87%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color:
-        #000;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-
-    .hover-underline-animation:hover:after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
-
-    header {
-      height: 120px;
-      background-color: lightgray;
-    }
-
-    img {
-      float: left;
-    }
-
-    p {
-      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-      padding-left: 10px;
-      margin-top: 5px;
-      display: inline-block;
-    }
-
-    #nasc, #entrada, #saida{
+    #nasc,
+    #entrada,
+    #saida {
       width: 120px;
     }
 
-    fieldset{
+    fieldset {
       border-width: 0;
     }
 
-    #env{
+    #env {
       margin: 10px;
     }
 
-    h1{
+    h1 {
       margin-left: 10px;
     }
 
-    form{
+    form {
       background-color: lightgray;
       border: 2px solid darkgray;
       border-radius: 10px;
@@ -92,21 +39,27 @@
       margin-left: auto;
       margin-right: auto;
 
-      
+
     }
 
-    form label, form legend{
+    form label,
+    form legend {
       display: block;
       font-size: 20px;
       margin: 0 0 10px 10px;
     }
 
-    .input-padrao{
+    .input-padrao {
       display: block;
       margin: 0 0 20px 10px;
       padding: 10px 25px;
       width: 500px;
       background-color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
     }
   </style>
 
@@ -115,7 +68,6 @@
 <body>
 
   <header>
-
     <img src="lindauralog.png" style="height: 120px; width: 120px;"> <br>
     <div
       style="  font-size: 30px; font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; padding-left: 10px; margin-top: 5px; display: inline-block;">
@@ -123,12 +75,17 @@
       <p style="font-size: 17px;"> COLÉGIO ESTADUAL </p>
     </div>
 
-    <h2 class="hover-underline-animation">VISITANTES</h2>
-    <h2 class="hover-underline-animation">SAÍDA</h2>
-    <h2 class="hover-underline-animation">ENTRADA</h2>
-
-
+      <a href="/visitantes.html">
+        <h2 class="hover-underline-animation">VISITANTES</h2>
+      </a>
+      <a href="/saida.html">
+        <h2 class="hover-underline-animation">SAÍDA</h2>
+      </a>
+      <a href="/index.html">
+        <h2 class="hover-underline-animation">ENTRADA</h2>
+      </a>
   </header>
+  
   <form>
 
     <label for="nome">Nome e Sobrenome:<p>*</p></label>
@@ -145,7 +102,8 @@
 
     <fieldset>
 
-      <legend>Com qual gênero você prefere ser identificado(a)?<p>*</p></legend>
+      <legend>Com qual gênero você prefere ser identificado(a)?<p>*</p>
+      </legend>
 
       <label for="radio-M"><input type="radio" name="genero" value="M" id="radio-M">Masculino</label>
 
@@ -164,7 +122,7 @@
     <input type="submit" value="Enviar" id="env">
 
   </form>
-  
+
   <script src="script.js"></script>
 </body>
 
